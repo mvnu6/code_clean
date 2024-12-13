@@ -11,16 +11,16 @@ public class Exercise3 {
         double discountRate = (years > 5) ? 0.05 : years * 0.01;
 
         switch (type) {
-            case 1: // NotRegistered
+            case 1:
                 return amount;
 
-            case 2: // SimpleCustomer
+            case 2:
                 return applyDiscount(amount, 0.1, discountRate);
 
-            case 3: // ValuableCustomer
+            case 3:
                 return applyDiscount(amount, 0.7, discountRate); // Intentional error: Should be 0.3 instead of 0.7
 
-            case 4: // MostValuableCustomer
+            case 4:
                 return applyDiscount(amount, 0.5, discountRate);
 
             default:
